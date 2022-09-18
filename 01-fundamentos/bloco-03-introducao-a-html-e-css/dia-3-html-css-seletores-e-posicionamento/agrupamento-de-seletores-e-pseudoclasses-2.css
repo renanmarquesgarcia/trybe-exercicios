@@ -1,7 +1,12 @@
+/* Exercícios (não deve atribuir nenhuma classe ou id aos componentes, mas apenas utilizar pseudoclasses para individualizar cada elemento!) */
+    
+/* 1 - Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda. */
 div:hover {
     border: 3px solid black
 }
 
+/*  2 - Faça cada div ter uma cor própria.
+    3 - Estilize cada uma das tags h3. */
 div:nth-of-type(1){
     background-color: red;
     color:blue;
@@ -12,6 +17,7 @@ div:nth-of-type(2){
     color: orangered
 }
 
+/* 4 - Faça a terceira div ser maior que as demais. */
 div:nth-of-type(3){
     background-color: purple;
     color: yellow;
@@ -29,6 +35,7 @@ div:nth-of-type(5){
     color: black;
 }
 
+/* 5 - Deixe as tags ímpares h3 com o texto em itálico. */
 div:nth-child(odd){
     font-style:italic
 }
