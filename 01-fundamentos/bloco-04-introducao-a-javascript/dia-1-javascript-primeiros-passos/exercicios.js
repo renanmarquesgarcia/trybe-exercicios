@@ -146,15 +146,53 @@
 // 9 - Utilize if/else para fazer um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
 // Bonus: use somente um if.
 
-const a = 30;
-const b = 40;
-const c = 51;
+// const a = 30;
+// const b = 40;
+// const c = 51;
 
-if(a % 2 != 0 || b % 2 != 0 || c % 2 != 0){
-    console.log(true);
-}
-else{
-    console.log(false);
-}
+// if(a % 2 != 0 || b % 2 != 0 || c % 2 != 0){
+//     console.log(true);
+// }
+// else{
+//     console.log(false);
+// }
 
 
+
+// 10 - Utilize if/else para escrever um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda, descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+// Atente que, sobre o custo do produto, incide um imposto de 20%.
+// Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.
+// O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.
+// valorCustoTotal = valorCusto + impostoSobreOCusto;
+// lucro = valorVenda - valorCustoTotal (lucro de um produto);
+
+// const valorCusto = 50;
+// const valorVenda = 100;
+// const impostoSobreOCusto = 0.2;
+
+// let valorCustoTotal = valorCusto + (valorCusto * impostoSobreOCusto);
+// let lucro = valorVenda - valorCustoTotal
+
+// if(valorCusto < 0 || valorVenda < 0 || impostoSobreOCusto < 0 ){
+//     console.log('Insira valores válidos');
+// }
+// else{
+//     console.log(lucro * 1000);
+// }
+
+
+// let salarioBruto = 3500;
+// let aliquotaInss = 0.11;
+// let aliquotaIr = 0.15;
+// let parcelaIr = 354.8;
+
+// let salarioInss = salarioBruto - (salarioBruto * aliquotaInss);
+// let salarioIR = (salarioInss * aliquotaIr) - parcelaIr;
+// let salarioLiquido = salarioInss - salarioIR;
+
+// if (salarioBruto < 0 || aliquotaInss < 0 || aliquotaIr < 0 || parcelaIr < 0){
+//     console.log('insira valores válidos')
+// }
+// else {
+//     console.log(salarioLiquido);
+// }
