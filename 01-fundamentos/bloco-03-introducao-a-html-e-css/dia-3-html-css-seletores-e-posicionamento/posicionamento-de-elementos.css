@@ -1,0 +1,38 @@
+  /* Exercícios: Personagens pertencentes à Nintendo© */
+  
+  /* 1 - Posicione o Mário acima do Goomba. */
+  .super-mario {
+    width: 200px;
+    position: absolute;       
+  }
+  
+  .goomba {
+    width: 100px;
+    position: absolute;
+    top: 350px;
+    left: 70px
+  }
+  
+  /* 3 - Posicione o balão para que se torne uma fala de Bowser.*/
+  .baloon {
+    top: 100px;
+    position: absolute;
+    left:200px;
+    z-index: 1;
+  }
+
+  /* 2 - Posicione a tag p para que fique dentro do balão de fala. */
+  .speech {
+    font-size: 25px;
+    position: absolute;
+    top: 150px;
+    left:220px;
+    z-index: 2;
+  }
+  
+  .bowser {
+    width: 200px;
+    position: absolute;
+    top: 230px;
+    left: 500px
+  }
