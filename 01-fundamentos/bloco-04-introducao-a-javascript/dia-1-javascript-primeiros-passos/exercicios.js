@@ -34,17 +34,17 @@
 // const c = 10;
 
 // if(a > b && a > c){
-//     console.log('a é o maior número');
+//     console.log('O maior número é:' + a + ' (a)');
 // }
 // else if(b > a && b > c){
-//     console.log('b é o maior número');
+//     console.log('O maior número é:' + b + ' (b)');
 // }
 // else if(a == b && b == c){
-//     console.log('todos os números são iguais')
+//     console.log('Todos os números são iguais')
 // }
 
 // else {
-//     console.log('c é ao maior número')
+//     console.log('O maior número é:' + c + ' (c)')
 // }
 
 
@@ -53,13 +53,13 @@
 
 // const a = -1;
 // if(a > 0){
-//     console.log('positivo');
+//     console.log('positive');
 // }
 // else if(a == 0){
 //     console.log('zero');
 // }
 // else{
-//     console.log('negativo');
+//     console.log('negative');
 // }
 
 
@@ -68,18 +68,22 @@
 // Para os ângulos serem de um triângulo válido, a soma dos três deve ser 180 graus.
 // Um ângulo será considerado inválido se não tiver um valor positivo.
 
-// const a = 89.9;
-// const b = 30;
-// const c = 60;
+// const degreeAngleA = 65;
+// const degreeAngleB = 100;
+// const degreeAngleC = 15;
 
-// if (a < 0 || b < 0 || c < 0){
-//     console.log('valor do ângulo inválido')
-// }
-// else if(a + b + c == 180){
+// let sumOfAngles = degreeAngleA + degreeAngleB + degreeAngleC;
+
+// let allAnglesArePositives = degreeAngleA > 0 && degreeAngleB > 0 && degreeAngleC > 0;
+
+// if(allAnglesArePositives){
+//   if (sumOfAngles === 180) {
 //     console.log(true);
-// }
-// else{
+//   } else {
 //     console.log(false);
+//   };
+// } else {
+//   console.log('Erro: ângulo inválido');
 // }
 
 
@@ -90,7 +94,30 @@
 // Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 // Exemplo: bishop (bispo) -> diagonals (diagonais)
 
+// let chessPiece = 'cavalo'
 
+// switch(chessPiece.toLowerCase()){
+//     case 'rei':
+//         console.log("Rei: Uma casa em qualquer direção");
+//         break;
+//     case 'rainha':
+//         console.log("Rainha: horizontais, verticais e diagonais");
+//         break;
+//     case 'bispo':
+//         console.log("Bispo: diagonais ");
+//         break;
+//     case 'cavalo':
+//         console.log("Cavalo: movimento em L");
+//         break;
+//     case 'torre':
+//         console.log("Torre: horizontais e verticais");
+//         break;
+//     case 'peão':
+//         console.log("Peão: uma casa para frente, no primeito movimento podem ser duas, captura peças só em diagonais");
+//         break;
+//     default:
+//         console.log('nome da peça inválido');
+// }
 
 
 
@@ -129,33 +156,35 @@
 
 
 
-// rocket: Há um par entre nós 8 - Utilize if/else para fazer um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false.
+// rocket: 8 (Há um par entre nós) - Utilize if/else para fazer um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false.
 // Bonus: use somente um if.
 
-// const a = 37
-// const b = 48
-// const c = 33
+// const a = 37;
+// const b = 48;
+// const c = 33;
 
-// if(a % 2 == 0 || b % 2 == 0 || c % 2 == 0){
-//     console.log(true);
-// }
-// else{
-//     console.log(false);
-// }
+// let parEntreNos = false;
+
+// if(a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
+//     parEntreNos = true;
+// };
+// console.log(parEntreNos);
+
 
 // 9 - Utilize if/else para fazer um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
 // Bonus: use somente um if.
 
 // const a = 30;
 // const b = 40;
-// const c = 51;
+// const c = 50;
+
+// let imparEntreNos = false;
 
 // if(a % 2 != 0 || b % 2 != 0 || c % 2 != 0){
-//     console.log(true);
-// }
-// else{
-//     console.log(false);
-// }
+//     imparEntreNos = true;
+// };
+// console.log(imparEntreNos);
+
 
 
 
@@ -166,33 +195,61 @@
 // valorCustoTotal = valorCusto + impostoSobreOCusto;
 // lucro = valorVenda - valorCustoTotal (lucro de um produto);
 
-// const valorCusto = 50;
-// const valorVenda = 100;
-// const impostoSobreOCusto = 0.2;
 
-// let valorCustoTotal = valorCusto + (valorCusto * impostoSobreOCusto);
-// let lucro = valorVenda - valorCustoTotal
+// const costOfProduct = 1;
+// const saleValue = 3;
 
-// if(valorCusto < 0 || valorVenda < 0 || impostoSobreOCusto < 0 ){
-//     console.log('Insira valores válidos');
-// }
-// else{
-//     console.log(lucro * 1000);
-// }
+// if (costOfProduct >= 0 && saleValue >= 0) {
+//   const totalCostOfProduct = costOfProduct * 1.2;
+//   const totalProfit = (saleValue - totalCostOfProduct) * 1000;
+//   console.log(totalProfit);
+// } else {
+//   console.log("Error, os valores não podem ser negativos");
+// };
 
 
-// let salarioBruto = 3500;
-// let aliquotaInss = 0.11;
-// let aliquotaIr = 0.15;
-// let parcelaIr = 354.8;
 
-// let salarioInss = salarioBruto - (salarioBruto * aliquotaInss);
-// let salarioIR = (salarioInss * aliquotaIr) - parcelaIr;
-// let salarioLiquido = salarioInss - salarioIR;
+// 11- Utilize if/else para fazer um programa que, dado um salário bruto, calcule o líquido a ser recebido.Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR.
+// A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
+// INSS (Instituto Nacional do Seguro Social)
+// Salário bruto até R$ 1.556,94: alíquota de 8%
+// Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9%
+// Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11%
+// Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88
+// IR (Imposto de Renda)
+// Até R$ 1.903,98: isento de imposto de renda
+// De R$ 1.903,99 a 2.826,65: alíquota de 7,5% e parcela de R$ 142,80 a deduzir do imposto
+// De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir do imposto
+// De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
+// Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
 
-// if (salarioBruto < 0 || aliquotaInss < 0 || aliquotaIr < 0 || parcelaIr < 0){
-//     console.log('insira valores válidos')
-// }
-// else {
-//     console.log(salarioLiquido);
-// }
+let aliquotINSS;
+let aliquotIR;
+
+let grossSalary = 3000;
+
+if (grossSalary <= 1556.94){
+    aliquotINSS = grossSalary * 0.08
+} else if (grossSalary <= 2594.92){
+    aliquotINSS = grossSalary * 0.09
+} else if (grossSalary <= 5189.82){
+    aliquotINSS = grossSalary * 0.11
+} else {    
+    aliquotINSS = 570.88;
+};
+
+let baseSalary = grossSalary - aliquotINSS;
+
+if(baseSalary <= 1903.98){
+    aliquotIR = 0;
+} else if(baseSalary <= 2826.65){
+    aliquotIR = (baseSalary * 0.075) - 142.8;
+} else if(baseSalary <= 3751.05){
+    aliquotIR = (baseSalary * 0.15) - 354.8;
+} else if(baseSalary <= 4664.68){
+    aliquotIR = (baseSalary * 0.225 ) - 636.13;
+} else {
+    aliquotIR = (baseSalary * 0.275 ) - 869.36
+};
+
+console.log('Salário Líquido: ' + (baseSalary - aliquotIR));
