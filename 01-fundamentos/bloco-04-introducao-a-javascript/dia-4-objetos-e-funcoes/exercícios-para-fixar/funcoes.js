@@ -70,16 +70,16 @@ function biggestNumber(a, b, c){
 
 // 5 - Faça um programa que receba três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido, o programa deve retornar uma mensagem de erro.
 
-function isTriangle(angleA, angleB, angleC){
-    if(angleA < 0 || angleB < 0 || angleC < 0){
-        return 'error, insira valores positivos'
-    } else if (angleA + angleB + angleC === 180){
-        return true;
-    }
-    else {
-        return false
-    }
-}
+// function isTriangle(angleA, angleB, angleC){
+//     if(angleA < 0 || angleB < 0 || angleC < 0){
+//         return 'error, insira valores positivos'
+//     } else if (angleA + angleB + angleC === 180){
+//         return true;
+//     }
+//     else {
+//         return false
+//     }
+// }
 
 
 
