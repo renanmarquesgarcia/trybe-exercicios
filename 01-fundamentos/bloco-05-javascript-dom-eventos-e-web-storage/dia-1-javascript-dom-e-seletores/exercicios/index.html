@@ -49,18 +49,38 @@
     //   - document.getElementsByTagName()
     //   1. Crie e execute uma função que mude o texto na tag `<p>-----</p>`, para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
 
-    document.getElementsByTagName('p')[1].innerText = "Daqui a 2 anos estarei trabalhando como programador e morando na praia.";
+    function changeParagraph() {   
+    let paragraph = document.getElementsByTagName('p')[1];
+    paragraph.innerHTML = "Daqui a 2 anos estarei trabalhando como programador e morando na praia.";
+    }
+    changeParagraph();
 
     //   2. Crie e execute uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).    
     
-    document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)";
+    function changeColor(){
+    let squaresColor = document.getElementsByClassName("main-content")[0];
+    squaresColor.style.backgroundColor = "rgb(76,164,109)";
+    }
+    changeColor();
 
     //   3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.   
     
-    document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
+    function fixColor(){
+    let squareColor = document.getElementsByClassName("center-content")[0];
+    squareColor.style.backgroundColor = "white";
+    }
+    fixColor();
 
     //   4. Crie e execute uma função que corrija o texto da tag <h1>.
+
+    function fixText(){
+      let changeText = document.getElementsByTagName('h1')[0];changeText.innerText = 'Exercício - JavaScript';
+    }
+    fixText();
+
     //   5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.
+
+
     //   6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
       
     </script>
