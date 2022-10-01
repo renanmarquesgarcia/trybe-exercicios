@@ -79,6 +79,7 @@ function displayHolidays(){
 displayHolidays()
 
     // 5 
+
 function displayFridays(fridaysArray) {
     let getFridayButton = document.querySelector('#btn-friday');
     let fridays = document.getElementsByClassName('friday');
@@ -98,8 +99,37 @@ function displayFridays(fridaysArray) {
 let decemberFridays = [4, 11, 18, 25]
 displayFridays(decemberFridays);
     
+    // 6
 
+function dayMouseOver() {
+    let days = document.getElementById('days');
+    days.addEventListener('mouseover', function(event) {
+        event.target.style.fontSize = '30px';
+        event.target.style.fontWeight = '600'; // Ele pega o evento alvo e altera o estilo de fontWeight para 600
+        });
+      }
+      
+function dayMouseOut() {
+    let days = document.getElementById('days');
+    days.addEventListener('mouseout', function(event) {
+        event.target.style.fontSize = '20px';
+        event.target.style.fontWeight = '200'; // Ele pega o evento alvo e altera o estilo de fontWeight para 200
+        });
+      }
 
+dayMouseOver();
+dayMouseOut();
 
-    
+      // 7 
 
+function addpersonalizedTask(task){
+    const myTask = document.getElementsByClassName('my-tasks')[0];
+    const taskName = document.createElement('span');
+    taskName.innerText = task;
+
+    myTask.appendChild(span)
+}
+
+addpersonalizedTask('cozinhar');
+
+    // 8 
