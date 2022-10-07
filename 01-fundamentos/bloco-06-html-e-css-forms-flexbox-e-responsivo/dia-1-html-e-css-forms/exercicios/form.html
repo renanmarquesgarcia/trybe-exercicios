@@ -14,7 +14,7 @@
 
         <fieldset>
             <label for="full-name">Nome Completo:                
-                <input type="text" name="name" id="full-name" minlength="10" maxlength="40">
+                <input type="text" name="name" id="full-name" minlength="10" maxlength="40" onsubmit="return formsValidation()">
             </label>
 
             <br> <br>
@@ -41,9 +41,9 @@
 
             <br><br>
 
-            <label for="prize"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+            <label for="reasons"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
             <br><br>
-            <textarea name="whyYou" id="prize" cols="65" rows="10" maxlength="500"></textarea>
+            <textarea name="whyYou" id="reasons" cols="65" rows="10" maxlength="500"></textarea>
             </label>
             
             <br><br>
@@ -61,14 +61,15 @@
             <br><br>
 
             <label for="privacityTerms"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-                <input type="checkbox" name="terms" id="privacityTerms">
+                <input type="checkbox" name="terms" id="privacityTerms" required >
             </label>
         </fieldset>
 
         <br>
-
-            <button type="submit" id="submit-button">Enviar</button>
-            <button type="reset">Apagar</button>    
+        <section id="buttons">
+            <button type="submit" id="submit-button" disabled>Enviar</button>
+            <button type="button" id="clear-button">Apagar</button>    
+        </section>
     <script src="script.js"></script>
 </body>
 </html>
