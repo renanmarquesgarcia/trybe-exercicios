@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,29 +15,28 @@
 
         <fieldset>
             <label for="full-name">Nome Completo:                
-                <input type="text" name="name" id="full-name" minlength="10" maxlength="40" onsubmit="return formsValidation()">
-            </label>
-
-            <br> <br>
+                <input type="text" name="name" id="full-name" minlength="10" maxlength="40" class="form-control form-control-sm" >
+            </label>    
+            <br><br>    
 
             <label for="e-mail">Email:                
-                <input type="email" name="email" id="e-mail" minlength="10" maxlength="50">
+                <input type="email" name="email" id="e-mail" minlength="10" maxlength="50" class="form-control form-control-sm">
             </label>
 
             <br> <br>
 
             <p>Destino Preferido:</p>
             <label for="place1">
-                <input type="radio" name="favorite-places" id="place1">Cidade                
+                <input type="radio" name="favorite-places" id="place1" class="form-check-input">Cidade                
             </label>
             <label for="place2">
-                <input type="radio" name="favorite-places" id="place2">Campo                
+                <input type="radio" name="favorite-places" id="place2" class="form-check-input">Campo                
             </label>
             <label for="place3">
-                <input type="radio" name="favorite-places" id="place3">Praia             
+                <input type="radio" name="favorite-places" id="place3" class="form-check-input">Praia             
             </label>
             <label for="place4">
-                <input type="radio" name="favorite-places" id="place4">Montanhas                
+                <input type="radio" name="favorite-places" id="place4" class="form-check-input">Montanhas                
             </label>
 
             <br><br>
@@ -61,15 +61,16 @@
             <br><br>
 
             <label for="privacityTerms"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-                <input type="checkbox" name="terms" id="privacityTerms" required >
+                <input type="checkbox" name="terms" id="privacityTerms" required>
             </label>
         </fieldset>
 
         <br>
         <section id="buttons">
-            <button type="submit" id="submit-button" disabled>Enviar</button>
-            <button type="button" id="clear-button">Apagar</button>    
+            <button type="submit" id="submit-button" class="btn btn-outline-success" disabled>Enviar</button>
+            <button type="button" id="clear-button" class="btn btn-outline-secondary">Apagar</button> 
         </section>
     <script src="script.js"></script>
-</body>
+    <script src="js/bootstrap.min.js"></script>
+   </body>
 </html>
