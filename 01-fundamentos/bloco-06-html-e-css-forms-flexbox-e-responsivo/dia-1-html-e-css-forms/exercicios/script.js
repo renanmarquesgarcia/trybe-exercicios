@@ -9,9 +9,7 @@ function handleSubmit(event) {
     event.preventDefault();
     const validation = textInputValidation();    
 }
-  
-
-  
+    
 function clearFields(){
     const inputElements = document.querySelectorAll('input');
     const textArea = document.querySelector('textarea');
@@ -48,6 +46,5 @@ window.onload = function () {
     const clearButton = document.querySelector('#clear-button');
     clearButton.addEventListener('click', clearFields);
 
-    submitButton.addEventListener('click', handleSubmit);
-    
+    submitButton.addEventListener('click', handleSubmit);    
   };
