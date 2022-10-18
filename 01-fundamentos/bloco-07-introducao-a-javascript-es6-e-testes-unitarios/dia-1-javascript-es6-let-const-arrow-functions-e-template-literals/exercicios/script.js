@@ -73,4 +73,42 @@ const longestWord = (phrase) => {
 console.log(longestWord('Antônio foi ao banheiro e não sabemos o que aconteceu')) // retorna 'aconteceu'
 
 // -----------------------------------------------------------------
+// Escreva uma função que substitua a letra ‘x’ em uma frase.
 
+const substituaX = (nome) => {
+  const frase = 'Tryber x aqui!'
+  const arrayFrase = frase.split(' ')  
+  
+  for(let index = 0; index < arrayFrase.length; index += 1){
+    if(index === 1){
+      arrayFrase[index] = nome;
+      return (arrayFrase.join(' '))
+    }
+  }
+  
+}
+console.log(substituaX('Renan'));
+
+
+// const substituaX = (nome) => {
+//   const frase = 'Tryber x aqui!'
+//   let newPhrase = ''
+
+//   for(let index = 0; index < frase.length; index += 1){
+//     frase[index] === 'x' ? `${frase[index]} = ${nome}` : `${frase[index]} = ${frase[index]}`
+//     newPhrase.push(frase[index]);
+//   }
+//   return newPhrase;
+// }
+// console.log(substituaX('Renan'));
+
+// -----------------------------------------------------------------------
+// Escreva uma função que irá receber o retorno da Função 1 por parâmetro e retornará uma nova string.
+
+const minhasSkills = (funcao1) => {
+  const skills = ['JavaScript', 'HTML', 'CSS']
+  let concatena = `${funcao1} Minhas três principais habilidades são: ${skills[0]}, ${skills[1]} e ${skills[2]}.`
+  return concatena
+}
+
+console.log(minhasSkills(substituaX('Renan')));
