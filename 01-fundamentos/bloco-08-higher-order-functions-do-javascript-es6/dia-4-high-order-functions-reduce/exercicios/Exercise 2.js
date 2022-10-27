@@ -65,7 +65,31 @@ const books = [
   function reduceNames() {
     // escreva seu código aqui
     const authors = books.map((book) => book.author.name);
-    return authors.reduce((acc, curr) => `${acc}, ${curr}`) + '.';
+    return authors.reduce((accName, currName) => `${accName}, ${currName}`) + '.';
   }
 
-  console.log(reduceNames());
+//   console.log(reduceNames());
+
+ // -------------------------------------------------------------------------
+
+ // Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+ function averageAge() {
+    // escreva seu código aqui
+    const ages = books.map((book) => book.releaseYear - book.author.birthYear);
+    return ages.reduce((accAge, currAge) => accAge + currAge)/ages.length;
+  }
+
+//   console.log(averageAge());
+
+// ---------------------------------------------------------------------------
+
+// Encontre o livro com o maior nome.
+
+function longestNamedBook() {
+    // escreva seu código aqui
+    return books.reduce((accBook, currBook) => 
+    (accBook.name.length > currBook.name.length) ? accBook : currBook)
+  }
+
+//   console.log(longestNamedBook());
+
