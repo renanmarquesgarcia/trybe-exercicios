@@ -10,12 +10,12 @@ const names = [
   
   function containsA() {
     // escreva seu código aqui
-    const getLetterA = (letter) => (letter === 'A' || letter === 'a')
-            
+    const getLetterA = (letter) => (letter === 'A' || letter === 'a');            
       
-    const string = names.reduce(((acc, curr) => `${acc}${curr}`));
-    const characterA = string.split('').filter(getLetterA);
-    return characterA.length;    
+    const string = names.reduce(((acc, curr) => `${acc}${curr}`))
+    const quantityOfAs = string.split('').filter(getLetterA).length;
+    return quantityOfAs;
+      
   }
 
    console.log(containsA()); 
